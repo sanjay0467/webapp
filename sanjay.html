@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Equipment Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .products, .contact {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .product-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Industrial Equipment Company</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <div>
+                    <h3>Product 1</h3>
+                    <p>Description of product 1.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <div>
+                    <h3>Product 2</h3>
+                    <p>Description of product 2.</p>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
